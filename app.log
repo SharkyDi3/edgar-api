@@ -1,0 +1,149 @@
+2024-07-10 14:17:07,591 ERROR: Error connecting to the database: Authentication plugin 'caching_sha2_password' is not supported
+2024-07-10 14:20:01,670 ERROR: Error connecting to the database: Authentication plugin 'caching_sha2_password' is not supported
+2024-07-10 14:20:59,300 INFO: package: mysql.connector.plugins
+2024-07-10 14:20:59,300 INFO: plugin_name: mysql_native_password
+2024-07-10 14:20:59,301 INFO: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-07-10 14:20:59,302 INFO: package: mysql.connector.plugins
+2024-07-10 14:20:59,302 INFO: plugin_name: caching_sha2_password
+2024-07-10 14:20:59,302 INFO: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2024-07-10 14:20:59,320 INFO: Database connected successfully
+2024-07-10 14:20:59,338 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-07-10 14:20:59,338 INFO: [33mPress CTRL+C to quit[0m
+2024-07-10 14:20:59,339 INFO:  * Restarting with stat
+2024-07-10 14:20:59,862 INFO: package: mysql.connector.plugins
+2024-07-10 14:20:59,862 INFO: plugin_name: mysql_native_password
+2024-07-10 14:20:59,863 INFO: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-07-10 14:20:59,863 INFO: package: mysql.connector.plugins
+2024-07-10 14:20:59,863 INFO: plugin_name: caching_sha2_password
+2024-07-10 14:20:59,863 INFO: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2024-07-10 14:20:59,864 INFO: Database connected successfully
+2024-07-10 14:20:59,870 WARNING:  * Debugger is active!
+2024-07-10 14:20:59,874 INFO:  * Debugger PIN: 969-343-339
+2024-07-10 14:22:01,524 INFO: 127.0.0.1 - - [10/Jul/2024 14:22:01] "GET / HTTP/1.1" 200 -
+2024-07-10 14:22:18,000 INFO: 127.0.0.1 - - [10/Jul/2024 14:22:18] "GET /api/data/ HTTP/1.1" 200 -
+2024-07-10 14:22:36,371 INFO: Status 404: Not Found
+2024-07-10 14:22:36,371 INFO: 127.0.0.1 - - [10/Jul/2024 14:22:36] "[33mGET /api/data/25 HTTP/1.1[0m" 404 -
+2024-07-10 14:23:29,671 INFO: 127.0.0.1 - - [10/Jul/2024 14:23:29] "GET /api/data/40 HTTP/1.1" 200 -
+2024-07-10 14:23:35,234 INFO: 127.0.0.1 - - [10/Jul/2024 14:23:35] "GET /api/data/1500 HTTP/1.1" 200 -
+2024-07-10 14:23:42,466 INFO: 127.0.0.1 - - [10/Jul/2024 14:23:42] "GET /api/data/856 HTTP/1.1" 200 -
+2024-07-10 14:23:51,685 INFO: Data with ID 856 deleted successfully
+2024-07-10 14:23:51,685 INFO: 127.0.0.1 - - [10/Jul/2024 14:23:51] "DELETE /api/data/856 HTTP/1.1" 200 -
+2024-07-10 14:23:58,309 INFO: Data with ID 856 deleted successfully
+2024-07-10 14:23:58,309 INFO: 127.0.0.1 - - [10/Jul/2024 14:23:58] "DELETE /api/data/856 HTTP/1.1" 200 -
+2024-07-10 14:24:02,311 INFO: Status 404: Not Found
+2024-07-10 14:24:02,311 INFO: 127.0.0.1 - - [10/Jul/2024 14:24:02] "[33mGET /api/data/856 HTTP/1.1[0m" 404 -
+2024-07-10 14:38:07,895 INFO: package: mysql.connector.plugins
+2024-07-10 14:38:07,895 INFO: plugin_name: mysql_native_password
+2024-07-10 14:38:07,895 INFO: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-07-10 14:38:07,895 INFO: package: mysql.connector.plugins
+2024-07-10 14:38:07,895 INFO: plugin_name: caching_sha2_password
+2024-07-10 14:38:07,895 INFO: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2024-07-10 14:38:07,895 INFO: Database connected successfully
+2024-07-10 14:38:07,910 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-07-10 14:38:07,910 INFO: [33mPress CTRL+C to quit[0m
+2024-07-10 14:38:07,910 INFO:  * Restarting with stat
+2024-07-10 14:38:08,381 INFO: package: mysql.connector.plugins
+2024-07-10 14:38:08,381 INFO: plugin_name: mysql_native_password
+2024-07-10 14:38:08,381 INFO: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-07-10 14:38:08,381 INFO: package: mysql.connector.plugins
+2024-07-10 14:38:08,381 INFO: plugin_name: caching_sha2_password
+2024-07-10 14:38:08,381 INFO: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2024-07-10 14:38:08,381 INFO: Database connected successfully
+2024-07-10 14:38:08,397 WARNING:  * Debugger is active!
+2024-07-10 14:38:08,397 INFO:  * Debugger PIN: 969-343-339
+2024-07-10 14:38:31,381 INFO: Status 404: Not Found
+2024-07-10 14:38:31,381 INFO: 127.0.0.1 - - [10/Jul/2024 14:38:31] "[33mGET /api/data/856 HTTP/1.1[0m" 404 -
+2024-07-10 14:38:37,434 INFO: 127.0.0.1 - - [10/Jul/2024 14:38:37] "GET /api/data/895 HTTP/1.1" 200 -
+2024-07-10 14:43:43,365 WARNING: Invalid input data: {'descr': ['unknown field'], 'file_film_number': ['unknown field'], 'filed_effective': ['unknown field'], 'filings': ['unknown field']}
+2024-07-10 14:43:43,365 INFO: Status 400: Bad Request
+2024-07-10 14:43:43,366 INFO: 127.0.0.1 - - [10/Jul/2024 14:43:43] "[31m[1mPUT /api/data/2040 HTTP/1.1[0m" 400 -
+2024-07-10 14:46:09,152 INFO:  * Detected change in 'C:\\Users\\CharanKalyankar\\OneDrive\\API\\modified_api\\app.py', reloading
+2024-07-10 14:46:09,183 INFO:  * Restarting with stat
+2024-07-10 14:46:09,706 INFO: package: mysql.connector.plugins
+2024-07-10 14:46:09,706 INFO: plugin_name: mysql_native_password
+2024-07-10 14:46:09,706 INFO: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-07-10 14:46:09,706 INFO: package: mysql.connector.plugins
+2024-07-10 14:46:09,706 INFO: plugin_name: caching_sha2_password
+2024-07-10 14:46:09,706 INFO: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2024-07-10 14:46:09,706 INFO: Database connected successfully
+2024-07-10 14:46:09,706 WARNING:  * Debugger is active!
+2024-07-10 14:46:09,722 INFO:  * Debugger PIN: 969-343-339
+2024-07-10 14:47:09,787 INFO: 127.0.0.1 - - [10/Jul/2024 14:47:09] "[31m[1mPUT /api/data/2040 HTTP/1.1[0m" 400 -
+2024-07-10 14:47:16,709 WARNING: Invalid input data: {'filings': ['unknown field']}
+2024-07-10 14:47:16,709 INFO: Status 400: Bad Request
+2024-07-10 14:47:16,709 INFO: 127.0.0.1 - - [10/Jul/2024 14:47:16] "[31m[1mPUT /api/data/2040 HTTP/1.1[0m" 400 -
+2024-07-10 15:02:10,010 INFO:  * Detected change in 'C:\\Users\\CharanKalyankar\\OneDrive\\API\\modified_api\\app.py', reloading
+2024-07-10 15:02:10,031 INFO:  * Restarting with stat
+2024-07-10 15:02:10,542 INFO: package: mysql.connector.plugins
+2024-07-10 15:02:10,542 INFO: plugin_name: mysql_native_password
+2024-07-10 15:02:10,542 INFO: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-07-10 15:02:10,542 INFO: package: mysql.connector.plugins
+2024-07-10 15:02:10,542 INFO: plugin_name: caching_sha2_password
+2024-07-10 15:02:10,542 INFO: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2024-07-10 15:02:10,548 INFO: Database connected successfully
+2024-07-10 15:02:10,556 WARNING:  * Debugger is active!
+2024-07-10 15:02:10,559 INFO:  * Debugger PIN: 969-343-339
+2024-07-10 15:02:54,061 INFO:  * Detected change in 'C:\\Users\\CharanKalyankar\\OneDrive\\API\\modified_api\\app.py', reloading
+2024-07-10 15:02:54,076 INFO:  * Restarting with stat
+2024-07-10 15:02:54,560 INFO: package: mysql.connector.plugins
+2024-07-10 15:02:54,560 INFO: plugin_name: mysql_native_password
+2024-07-10 15:02:54,560 INFO: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-07-10 15:02:54,560 INFO: package: mysql.connector.plugins
+2024-07-10 15:02:54,560 INFO: plugin_name: caching_sha2_password
+2024-07-10 15:02:54,560 INFO: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2024-07-10 15:02:54,560 INFO: Database connected successfully
+2024-07-10 15:02:54,560 WARNING:  * Debugger is active!
+2024-07-10 15:02:54,575 INFO:  * Debugger PIN: 969-343-339
+2024-07-10 15:03:29,875 INFO: package: mysql.connector.plugins
+2024-07-10 15:03:29,875 INFO: plugin_name: mysql_native_password
+2024-07-10 15:03:29,875 INFO: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-07-10 15:03:29,875 INFO: package: mysql.connector.plugins
+2024-07-10 15:03:29,875 INFO: plugin_name: caching_sha2_password
+2024-07-10 15:03:29,875 INFO: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2024-07-10 15:03:29,875 INFO: Database connected successfully
+2024-07-10 15:03:29,881 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-07-10 15:03:29,881 INFO: [33mPress CTRL+C to quit[0m
+2024-07-10 15:03:29,881 INFO:  * Restarting with stat
+2024-07-10 15:03:30,383 INFO: package: mysql.connector.plugins
+2024-07-10 15:03:30,383 INFO: plugin_name: mysql_native_password
+2024-07-10 15:03:30,383 INFO: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-07-10 15:03:30,383 INFO: package: mysql.connector.plugins
+2024-07-10 15:03:30,383 INFO: plugin_name: caching_sha2_password
+2024-07-10 15:03:30,383 INFO: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2024-07-10 15:03:30,383 INFO: Database connected successfully
+2024-07-10 15:03:30,398 WARNING:  * Debugger is active!
+2024-07-10 15:03:30,398 INFO:  * Debugger PIN: 969-343-339
+2024-07-10 15:03:40,672 ERROR: Error updating data with ID 2040: 1146 (42S02): Table 'creditratings.dm' doesn't exist
+2024-07-10 15:03:40,672 INFO: Status 500: Internal Server Error
+2024-07-10 15:03:40,673 INFO: 127.0.0.1 - - [10/Jul/2024 15:03:40] "[35m[1mPUT /api/data/2040 HTTP/1.1[0m" 500 -
+2024-07-10 15:05:12,084 INFO:  * Detected change in 'C:\\Users\\CharanKalyankar\\OneDrive\\API\\modified_api\\app.py', reloading
+2024-07-10 15:05:12,115 INFO:  * Restarting with stat
+2024-07-10 15:05:12,588 INFO: package: mysql.connector.plugins
+2024-07-10 15:05:12,588 INFO: plugin_name: mysql_native_password
+2024-07-10 15:05:12,588 INFO: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-07-10 15:05:12,588 INFO: package: mysql.connector.plugins
+2024-07-10 15:05:12,588 INFO: plugin_name: caching_sha2_password
+2024-07-10 15:05:12,588 INFO: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2024-07-10 15:05:12,588 INFO: Database connected successfully
+2024-07-10 15:05:12,604 WARNING:  * Debugger is active!
+2024-07-10 15:05:12,604 INFO:  * Debugger PIN: 969-343-339
+2024-07-10 15:05:15,592 INFO: Data with ID 2040 updated successfully
+2024-07-10 15:05:15,593 INFO: 127.0.0.1 - - [10/Jul/2024 15:05:15] "PUT /api/data/2040 HTTP/1.1" 200 -
+2024-07-10 15:05:23,679 INFO: 127.0.0.1 - - [10/Jul/2024 15:05:23] "GET /api/data/2040 HTTP/1.1" 200 -
+2024-07-10 15:06:43,385 INFO:  * Detected change in 'C:\\Users\\CharanKalyankar\\OneDrive\\API\\modified_api\\app.py', reloading
+2024-07-10 15:06:43,400 INFO:  * Restarting with stat
+2024-07-10 15:06:43,916 INFO: package: mysql.connector.plugins
+2024-07-10 15:06:43,916 INFO: plugin_name: mysql_native_password
+2024-07-10 15:06:43,916 INFO: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-07-10 15:06:43,916 INFO: package: mysql.connector.plugins
+2024-07-10 15:06:43,916 INFO: plugin_name: caching_sha2_password
+2024-07-10 15:06:43,916 INFO: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2024-07-10 15:06:43,919 INFO: Database connected successfully
+2024-07-10 15:06:43,919 WARNING:  * Debugger is active!
+2024-07-10 15:06:43,919 INFO:  * Debugger PIN: 969-343-339
+2024-07-10 15:08:59,547 WARNING: Invalid input data: {'file_film_number': ['must be of string type']}
+2024-07-10 15:08:59,547 INFO: Status 400: Bad Request
+2024-07-10 15:08:59,548 INFO: 127.0.0.1 - - [10/Jul/2024 15:08:59] "[31m[1mPUT /api/data/2040 HTTP/1.1[0m" 400 -
