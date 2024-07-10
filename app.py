@@ -15,6 +15,13 @@ status_codes = {
     500: "Internal Server Error"
 }
 
+data_schema = {
+    'filings': {'type': 'string'},
+    'descr': {'type': 'string'},
+    'filed_effective': {'type': 'string'},
+    'file_film_number': {'type': 'string'}
+}
+
 app = Flask(__name__)
 
 try:
@@ -31,14 +38,6 @@ try:
 except mysql.connector.Error as err:
     logging.error(f'Error connecting to the database: {err}')
     raise
-
-
-data_schema = {
-    'filings': {'type': 'string'},
-    'descr': {'type': 'string'},
-    'filed_effective': {'type': 'string'},
-    'file_film_number': {'type': 'string'}
-}
 
 
 @app.route('/')
@@ -90,22 +89,31 @@ def get_single_data(id):
 
 @app.route('/api/data/<int:id>', methods=['DELETE'])
 def delete_data(id):
+    query = f"SELECT * from edgar_company_data WHERE id = {id}"
+    cursor = db.cursor()
+    cursor.execute(query)
+    record = cursor.fetchone()
+    cursor.close()
     cursor = None
-    try:
-        cursor = db.cursor()
-        query = "DELETE FROM edgar_company_data WHERE id = %s"
-        cursor.execute(query, (id,))
-        db.commit()
-        logging.info(f'Data with ID {id} deleted successfully')
-        return jsonify({"message": "Data deleted successfully"})
-    except mysql.connector.Error as err:
-        status_code = 500
-        logging.error(f'Error deleting data with ID {id}: {err}')
-        logging.info(f'Status {status_code}: {status_codes.get(status_code)}')
-        return jsonify({"message": "Error deleting data"}), status_code
-    finally:
-        if cursor:
-            cursor.close()
+    if not record:
+        logging.info(f'Data with ID {id} does not exist')
+        return jsonify({"message": "Data doesn't exist"})
+    else:
+        try:
+            cursor = db.cursor()
+            query = "DELETE FROM edgar_company_data WHERE id = %s"
+            cursor.execute(query, (id,))
+            db.commit()
+            logging.info(f'Data with ID {id} deleted successfully')
+            return jsonify({"message": "Data deleted successfully"})
+        except mysql.connector.Error as err:
+            status_code = 500
+            logging.error(f'Error deleting data with ID {id}: {err}')
+            logging.info(f'Status {status_code}: {status_codes.get(status_code)}')
+            return jsonify({"message": "Error deleting data"}), status_code
+        finally:
+            if cursor:
+                cursor.close()
 
 
 @app.route('/api/data/<int:id>', methods=['PUT'])
